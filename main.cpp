@@ -39,6 +39,11 @@ int main(int argc, char **argv)
     ifstream inputFile{inputFileName};
     GenStack<char> openDelims;
 
+    if (!inputFile.is_open()) {
+      cerr << "Error: Could not open " << inputFileName << endl;
+      return 1;
+    }
+
     //// Travel through file character by character
     char ch;
     int line = 1;
