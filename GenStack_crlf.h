@@ -98,3 +98,4 @@ bool GenStack<T>::isEmpty()
 {
   return (top <= -1);
 }
+
