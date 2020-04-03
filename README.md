@@ -5,6 +5,12 @@ Christopher Chang
 
 Section 1
 
+## Extra Credit?
+This program should (hopefully) account for delimiters used in stuff like:
+```cpp
+cout << "(" << endl;
+```
+
 ## References
 I used https://www.geeksforgeeks.org/templates-cpp/ to learn about template
 classes.
