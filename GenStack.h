@@ -73,6 +73,7 @@ T GenStack<T>::pop()
 {
   // Check if empty before proceeding to remove
   if (isEmpty()) {
+    throw out_of_range("Tried to pop() from empty stack.");
     return '\0';
   }
 
