@@ -71,6 +71,12 @@ int main(int argc, char **argv)
       }
       // If the current character is a closing bracket
       else if ((ch == ')' || ch == '}' || ch == ']') && !isQuoted) {
+        if (openDelims.isEmpty()) {
+          cout << "Line " << line << ": Closing delimiter with no corresponding"
+               << " opening delimeter " << ch << endl;
+          return 1;
+        }
+
         char mostRecentOpen = openDelims.pop();
         char expectedDelim = calcCloseDelim(mostRecentOpen);
 
