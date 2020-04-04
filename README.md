@@ -1,4 +1,4 @@
-# Assignment 3 -- Match Delimiters
+# Assignment 3 -- Syntax Checker
 Christopher Chang
 
 2344338
